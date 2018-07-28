@@ -9,6 +9,13 @@
 
   <name>maven2</name>
   <url>http://maven.apache.org</url>
+  <distributionManagement>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>rdubey-PC-snapshots</name>
+        <url>http://localhost:8081/artifactory/libs-snapshot</url>
+    </snapshotRepository>
+</distributionManagement>
 
   <dependencies>
     <dependency>
@@ -30,6 +37,8 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
+  
 
   <build>
     <plugins>
